@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Бухгалтерский Отчет</title>
+  </head>
+  <body>
+    <h1 style="text-align:center;"><a target="" title="need money" href="https://www.tinkoff.ru/cards/credit-cards/">Бухгалтерский отчет</a>  </h1>
+    <div style="text-align:right"><img title="Ryazan" alt="mushrooms with eyes" width="100" height="120" src="./img/ryazan-logo.png" /></div>
+    <div style="display:inline"> grfujiewh</div>
+    <h2 align="center">Отчетность за 2011-2021 гг.</h2>
+    <p>Приведенная ниже отчетность (ключевые бухгалтерские формы) получена из официальных источников: баз данных Федеральной налоговой службы и Росстата РФ. Динамика ключевых финансовые показателей, представленных в отчетах, также отображена на графиках под таблицами.</p>
+    <p align="center">Важнейший показатель чистых активов и два коэффициента, рассчитанные по данным баланса, на которые следует обратить внимание в первую очередь, представлены ниже:</p>
+    <table border="3" align="center" width="70%" cellspacing="0">
+      <tr align="center">
+        <th>Финансовый показатель</th>
+        <td>31.12.21</td>
+        <td>31.12.20</td>
+        <td>31.12.19</td>
+      </tr>
+      <tr align="center">
+        <th>Коэф.автономии</th>
+        <td>0.98</td>
+        <td>0.98</td>
+        <td>--</td>
+      </tr>
+      <tr align="center">
+        <th>Коэффициент текущей ликвидности</th>
+        <td>7.6</td>
+        <td>4.3</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <p align="center">Динамика показателей капитала, внеоборотных активов (итог первого раздела баланса) и общей величины активов (сальдо баланса) изображена на следующем графике:
+
+    </p>
+    <div style="width: 500px; height: 200px;">
+      <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const labels = [
+        'Чистые активы',
+        'Внеоборотные Активы',
+        'Всего активов',
+      ];
+    
+      const data = {
+        labels: labels,
+        datasets: [{
+          label: 'Показатели капитала',
+          backgroundColor: ['yellow','purple','green'],
+          borderColor: 'rgb(255, 99, 132)',
+          data: [180, 35,215,],
+        }]
+      };
+    
+      const config = {
+        type: 'bar',
+        data: data,
+        options: {}
+      };
+    </script>
+    <script>
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+    </script>
+
+  
+  </body>
+</html>
