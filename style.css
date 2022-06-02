@@ -1,0 +1,57 @@
+body {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+  font-family: Arial;
+}
+
+.discount {
+  font-size: 200%;
+  font-weight: bold;
+  background: red;
+}
+
+.text {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.table {
+  font-size: 18px;
+  width: 75%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.table .table__row:nth-child(odd) {
+  background-color: blanchedalmond;
+}
+
+.table .table__row:first-child {
+  background-color: maroon;
+  color: white;
+  font-weight: bold;
+}
+
+.table .table__row:nth-child(even) {
+  background-color: darksalmon;
+}
+
+.table .table__cell {
+  border: 1px solid black;
+  padding: 0px;
+  padding: 10px 20px;
+  transition: 0.4s ease all;
+}
+
+.table .table__cell:hover {
+  background: mediumturquoise;
+  cursor: pointer;
+}
+
+.table .table__cell:nth-child(1) {
+  text-align: center;
+}
