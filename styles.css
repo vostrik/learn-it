@@ -1,0 +1,30 @@
+.app {
+  margin: 0;
+}
+
+.app__header,
+.app__footer {
+  height: 100px;
+  padding: 25px;
+}
+
+.app__header {
+  background-color: #96adc8;
+}
+
+.app__content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.app__navigation {
+  background-color: #d7ffab;
+}
+
+.app__article {
+  background-color: #fcff6c;
+}
+
+.app__footer {
+  background-color: #d89d6a;
+}
