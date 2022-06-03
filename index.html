@@ -8,29 +8,41 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="app">
-    <header class="app__header">
-      <a title="Pavel Vostrikov" href="/">Pavel Vostrikov</a>
-      <a href="tel:880012345678">8 800 1234 56 78</a>
+    <header class="app__header header">
+      <a class="logo header__logo" title="Pavel Vostrikov" href="/">
+        Pavel Vostrikov
+      </a>
+      <a class="header__phone" href="tel:880012345678">8 800 1234 56 78</a>
     </header>
     <main class="app__content">
       <nav class="app__navigation">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Works</a></li>
-          <li><a href="#">Bio</a></li>
-          <li><a href="#">Contacts</a></li>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Works</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Bio</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contacts</a>
+          </li>
         </ul>
       </nav>
       <article class="app__article">
-        <h1>Pavel Vostrikov</h1>
+        <h1 class="logo">Pavel Vostrikov</h1>
         <p>
           Web developer from Ryazan. 31 years old.
         </p>
       </article>
     </main>
-    <footer class="app__footer">
-      <a title="Pavel Vostrikov" href="/">Pavel Vostrikov</a>
-      <a href="https://github.com/vostrik">vostrik</a>
+    <footer class="app__footer footer">
+      <a class="logo footer__logo" title="Pavel Vostrikov" href="/">
+        Pavel Vostrikov
+      </a>
+      <a class="footer__link" href="https://github.com/vostrik">vostrik</a>
     </footer>
   </body>
 </html>
